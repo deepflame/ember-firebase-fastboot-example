@@ -1,8 +1,8 @@
 {
-  "name": "ember-fastboot-test",
+  "name": "ember-firebase-example",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for ember-fastboot-test goes here",
+  "description": "Small description for ember-firebase-example goes here",
   "repository": "",
   "license": "MIT",
   "author": "",

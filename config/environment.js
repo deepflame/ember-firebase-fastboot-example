@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'ember-fastboot-test',
+    modulePrefix: 'ember-firebase-example',
     environment,
     rootURL: '/',
     locationType: 'auto',
