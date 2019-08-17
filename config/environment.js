@@ -27,6 +27,15 @@ module.exports = function(environment) {
     hostWhitelist: ['example.com', 'subdomain.example.com', /^localhost:\d+$/]
   };
 
+  ENV['firebase'] = {
+    apiKey: "xyz",
+    authDomain: "YOUR-FIREBASE-APP.firebaseapp.com",
+    databaseURL: "https://YOUR-FIREBASE-APP.firebaseio.com",
+    projectId: "YOUR-FIREBASE-APP",
+    storageBucket: "YOUR-FIREBASE-APP.appspot.com",
+    messagingSenderId: "00000000000"
+  };
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
