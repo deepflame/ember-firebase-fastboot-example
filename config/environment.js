@@ -23,6 +23,10 @@ module.exports = function(environment) {
     }
   };
 
+  ENV['fastboot'] = {
+    hostWhitelist: ['example.com', 'subdomain.example.com', /^localhost:\d+$/]
+  };
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
