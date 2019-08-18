@@ -8,6 +8,7 @@
   },
   "functions": {
     "predeploy": [
+      "ember build -e production",
       "npm --prefix \"$RESOURCE_DIR\" run lint"
     ],
     "source": "functions"
