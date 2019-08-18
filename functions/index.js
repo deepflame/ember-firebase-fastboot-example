@@ -16,7 +16,7 @@ const app = express();
 
 // This points to the location of your app which is in functions/app
 //const distPath = 'app';
-const distPath = 'app';
+const distPath = 'dist';
 
 // This makes all your routes to be served in FastBoot
 app.get('/*', fastbootMiddleware(distPath));
@@ -24,4 +24,4 @@ app.get('/*', fastbootMiddleware(distPath));
 // This is necessary so you could serve your apps assets
 app.use(express.static(distPath));
 
-exports.app = functions.https.onRequest(app);
+exports.fastboot = functions.https.onRequest(app);

@@ -24,7 +24,7 @@ module.exports = function(environment) {
   };
 
   ENV['fastboot'] = {
-    hostWhitelist: ['example.com', 'subdomain.example.com', /^localhost:\d+$/]
+    hostWhitelist: [/^.*\.cloudfunctions\.net$/, 'example.com', 'subdomain.example.com', /^localhost:\d+$/]
   };
 
   ENV['firebase'] = {
